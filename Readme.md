@@ -1,4 +1,4 @@
-# Личный проект «Нёрдс»
+﻿# Личный проект «Нёрдс»
 
 * Студент: [Михаил Ляпин](https://up.htmlacademy.ru/htmlcss/18/user/158146).
 * Наставник: [Алексей Белов](https://up.htmlacademy.ru/htmlcss/18/user/96038).
