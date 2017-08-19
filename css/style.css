@@ -6,34 +6,16 @@ body {
 	font-family: Roboto, 'Myriad Pro', Candara, sans-serif;
 }
 
-h2 {
-	font-size: 45px;
-	line-height: 45px;
-	color: black;
-	font-weight: bold;
-}
-
-h3 {
-	color: black;
-	font-weight: bold;
-}
-
-.slide h3 {
+.page-title {
 	font-size: 55px;
 	line-height: 55px;
+	color: black;
+	font-weight: bold;	
 }
 
-.services-item h3 {
+.services-title {
 	font-size: 24px;
 	line-height: 30px;
-}
-
-.promo h3 {
-	font-size: 16px;
-	line-height: 24px;
-}
-
-.footer-contacts h3 {
-	font-size: 18px;
-	line-height: 30px;
+	color: black;
+	font-weight: bold;	
 }

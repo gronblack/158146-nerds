@@ -9,7 +9,7 @@
 	<header class="main-header">
 		<nav class="main-navigation">
     	<a class="main-header-logo">
-      	<img src="img/nerds-logo.svg" width="368" height="153" alt="Логотип веб-студии «Nerds»">
+      	<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии «Nerds»">
       </a>
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
@@ -26,17 +26,17 @@
 			<h2 class="visually-hidden">Достоинства</h2>
 		  <div class="slider">
 		      <div class="slide">
-		      	<h3>Долго, дорого, скрупулезно</h3>
+		      	<h3 class="page-title">Долго, дорого, скрупулезно</h3>
 		      	<p>Математически выверенный дизайн для вашего сайта или приложения.</p>
 		      	<a class="button slide-button" href="#">Узнать больше</a>
 		      </div>
 		      <div class="slide">
-		      	<h3>Любим математику как никто другой</h3>
+		      	<h3 class="page-title">Любим математику как никто другой</h3>
 		      	<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
 		      	<a class="button slide-button" href="#">Узнать больше</a>		      	
 		      </div>
 		      <div class="slide">
-		      	<h3>Только ночь, только хардкор</h3>
+		      	<h3 class="page-title">Только ночь, только хардкор</h3>
 		      	<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 		      	<a class="button slide-button" href="#">Узнать больше</a>		      	     	
 		      </div>
@@ -47,19 +47,19 @@
 			<ul class="services-list">
 				<li class="services-item">
 					<div><!-- Картинка в фоне --></div>
-					<h3>Вебсайты</h3>
+					<h3 class="services-title">Вебсайты</h3>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 					<a class="button button-red" href="#">Заказать</a>
 				</li>
 				<li class="services-item">
 					<div><!-- Картинка в фоне --></div>
-					<h3>Приложения</h3>
+					<h3 class="services-title">Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 					<a class="button button-green" href="#">Заказать</a>
 				</li>				
 				<li class="services-item">
 					<div><!-- Картинка в фоне --></div>
-					<h3>Презентации</h3>
+					<h3 class="services-title">Презентации</h3>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 					<a class="button button-yellow" href="#">Заказать</a>
 				</li>				
@@ -109,6 +109,9 @@
 	<footer class="main-footer">
 		<section class="footer-map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<p>
+				<img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
+			</p>
 			<div class="footer-contacts">
 				<h3>Nerds design studio</h3>
 				<p>
@@ -134,19 +137,19 @@
 		<h2>Напишите нам</h2>
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="write-item">
-      	Ваше имя:
-      	<input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+      	<label for="write-item-name">Ваше имя:</label>
+      	<input id="write-item-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
       </p>
       <p class="write-item">
-      	Ваш e-mail:
-      	<input type="text" name="name" value="" placeholder="Для отправки ответа">
+      	<label for="write-item-email">Ваш e-mail:</label>
+      	<input id="write-item-email" type="text" name="email" value="" placeholder="Для отправки ответа">
       </p>
       <p class="write-item">
-      	Текст письма:
-      	<textarea type="text" name="name" value="" placeholder="В свободной форме"></textarea>
+      	<label for="write-item-text">Текст письма:</label>
+      	<textarea id="write-item-text" type="text" name="text" value="" placeholder="В свободной форме"></textarea>
       </p>         
       <button class="button" type="submit">Отправить</button>
-      <span class="modal-close">x</span>
+      <button class="modal-close">Закрыть</button>
     </form>			
 	</section>	
 </body>

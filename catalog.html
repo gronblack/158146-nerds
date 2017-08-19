@@ -8,8 +8,8 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-    	<a class="main-header-logo">
-      	<img src="img/nerds-logo.svg" width="368" height="153" alt="Логотип веб-студии «Nerds»">
+    	<a class="main-header-logo" href="index.html">
+      	<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии «Nerds»">
       </a>
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
@@ -17,7 +17,7 @@
         <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-      <a class="bag" href="#">Корзина</a>
+      <a class="basket" href="#">Корзина</a>
 		</nav>
 	</header>
 	<main class="container">
@@ -29,26 +29,26 @@
 					<legend>Стоимость:</legend>
 					<input type="range" min="0" max="20000" step="100" value="15000">
 					<p>
-						От
-						<input class="filter-price" type="text" name="price-min">
-						До
-						<input class="filter-price" type="text" name="price-max">
+						<label for="filter-price-min">От</label>
+						<input id="filter-price-min" class="filter-price" type="text" name="price-min">
+						<label for="filter-price-max">До</label>
+						<input id="filter-price-max" class="filter-price" type="text" name="price-max">
 	         </p>					
 				</fieldset>
 				<fieldset>
 					<legend>Сетка:</legend>
 					<ul>
 						<li class="filter-option">
-							<label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="greed" value="adaptive" checked>
-							Адаптивная</label>
+							<input class="visually-hidden filter-input filter-input-radio" id="filter-adaptive" type="radio" name="greed" value="adaptive" checked>
+							<label for="filter-adaptive">Адаптивная</label>
 						</li>
 						<li class="filter-option">						
-							<label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="greed" value="fixed">
-							Фиксированная</label>													
+							<input class="visually-hidden filter-input filter-input-radio" id="filter-fixed" type="radio" name="greed" value="fixed">
+							<label for="filter-fixed">Фиксированная</label>													
 						</li>
 						<li class="filter-option">						
-							<label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="greed" value="rubber">
-							Резиновая</label>																				
+							<input class="visually-hidden filter-input filter-input-radio" id="filter-rubber" type="radio" name="greed" value="rubber">
+							<label for="filter-rubber">Резиновая</label>
 						</li>						
 					</ul>
 				</fieldset>
@@ -56,24 +56,24 @@
 					<legend>Особенности:</legend>
 					<ul>
 						<li class="filter-option">
-	            <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
-	            Слайдер</label>							
+	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" type="checkbox" name="slider" checked>
+	            <label for="filter-slider">Слайдер</label>							
 						</li>
 						<li class="filter-option">
-	            <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features">
-	            Блок преимуществ</label>							
+	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-features" type="checkbox" name="features">
+	            <label for="filter-features">Блок преимуществ</label>							
 						</li>
 						<li class="filter-option">
-	            <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-	            Новости</label>							
+	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-news" type="checkbox" name="news" checked>
+	            <label for="filter-news">Новости</label>							
 						</li>
 						<li class="filter-option">
-	            <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
-	            Галерея</label>							
+	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery" type="checkbox" name="gallery">
+	            <label for="filter-gallery">Галерея</label>							
 						</li>						
 						<li class="filter-option">
-	            <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bag">
-	            Корзина</label>							
+	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-basket" type="checkbox" name="basket">
+	            <label for="filter-basket">Корзина</label>							
 						</li>						
 					</ul>
 				</fieldset>
@@ -85,26 +85,26 @@
 				<legend>Сортировать:</legend>
 				<ul>
 					<li class="sorting-option">
-						<label><input class="visually-hidden sorting-radio" type="radio" name="sort-group" value="by-price" checked>
-						По цене</label>						
+						<input class="visually-hidden sorting-radio" id="sorting-by-price" type="radio" name="sort-group" value="by-price" checked>
+						<label for="sorting-by-price">По цене</label>						
 					</li>
 					<li class="sorting-option">
-						<label><input class="visually-hidden sorting-radio" type="radio" name="sort-group" value="by-type">
-						По типу</label>						
+						<input class="visually-hidden sorting-radio" id="sorting-by-type" type="radio" name="sort-group" value="by-type">
+						<label for="sorting-by-type">По типу</label>						
 					</li>					
 					<li class="sorting-option">
-						<label><input class="visually-hidden sorting-radio" type="radio" name="sort-group" value="by-name">
-						По названию</label>
+						<input class="visually-hidden sorting-radio" id="sorting-by-name" type="radio" name="sort-group" value="by-name">
+						<label for="sorting-by-name">По названию</label>
 					</li>					
 				</ul>
 				<ul>
 					<li class="sorting-option">
 						<input class="visually-hidden sorting-radio" type="radio" name="sort-way" value="desc" id="sort-desc" checked>
-						<label for="sort-desc">По убыванию</label>
+						<label class="visually-hidden" for="sort-desc">По убыванию</label>
 					</li>
 					<li class="sorting-option">
 						<input class="visually-hidden sorting-radio" type="radio" name="sort-way" value="asc" id="sort-asc">
-						<label for="sort-asc">По возрастанию</label>
+						<label class="visually-hidden" for="sort-asc">По возрастанию</label>
 					</li>
 				</ul>
 			</fieldset>
@@ -117,7 +117,7 @@
           <img src="img/product-1.jpg" width="360" height="576" alt="Шаблон «Sedona»">
         </a>
         <div class="catalog-item-hover">
-        	<div></div>
+        	<div><!--Шапка вверху--></div>
 					<div>
 						<h3>Sedona</h3>
 						<p>Информационный сайт для туристов</p>
@@ -131,7 +131,7 @@
           <img src="img/product-2.jpg" width="360" height="576" alt="Шаблон «Pink»">
         </a>
 				<div class="catalog-item-hover">
-        	<div></div>
+        	<div><!--Шапка вверху--></div>
         	<div>				
 						<h3>Pink App</h3>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -145,7 +145,7 @@
           <img src="img/product-3.jpg" width="360" height="576" alt="Шаблон «Barbershop»">
         </a>
 				<div class="catalog-item-hover">
-        	<div></div>
+        	<div><!--Шапка вверху--></div>
         	<div>				
 						<h3>Barbershop</h3>
 						<p>Сайт салона красоты. Для мужчин, да.</p>
@@ -159,7 +159,7 @@
           <img src="img/product-4.jpg" width="360" height="576" alt="Шаблон «Mishka»">
         </a>
 				<div class="catalog-item-hover">
-        	<div></div>
+        	<div><!--Шапка вверху--></div>
         	<div>				
 						<h3>Mishka</h3>
 						<p>Интернет-магазин вязаных игрушек</p>
@@ -173,7 +173,7 @@
           <img src="img/product-5.jpg" width="360" height="576" alt="Шаблон «A Plus»">
         </a>
 				<div class="catalog-item-hover">
-        	<div></div>
+        	<div><!--Шапка вверху--></div>
         	<div>				
 						<h3>A Plus</h3>
 						<p>Лендинг курсов повышения квалификации</p>
@@ -188,7 +188,7 @@
         </a>
 				</div>	
 				<div class="catalog-item-hover">
-				 	<div></div>
+				 	<div><!--Шапка вверху--></div>
         	<div>
 						<h3>Кваст</h3>
 						<p>Промо-сайт производителя крафтового кваса</p>
@@ -208,6 +208,9 @@
 	<footer class="main-footer">
 		<section class="footer-map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<p>
+				<img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
+			</p>
 			<div class="footer-contacts">
 				<h3>Nerds design studio</h3>
 				<p>
@@ -233,19 +236,19 @@
 		<h2>Напишите нам</h2>
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="write-item">
-      	Ваше имя:
-      	<input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+      	<label for="write-item-name">Ваше имя:</label>	
+      	<input id="write-item-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
       </p>
       <p class="write-item">
-      	Ваш e-mail:
-      	<input type="text" name="name" value="" placeholder="Для отправки ответа">
+      	<label for="write-item-email">Ваш e-mail:</label>
+      	<input id="write-item-email" type="text" name="email" value="" placeholder="Для отправки ответа">
       </p>
       <p class="write-item">
-      	Текст письма:
-      	<textarea type="text" name="name" value="" placeholder="В свободной форме"></textarea>
+      	<label for="write-item-text">Текст письма:</label>
+      	<textarea id="write-item-text" type="text" name="text" value="" placeholder="В свободной форме"></textarea>
       </p>         
       <button class="button" type="submit">Отправить</button>
-      <span class="modal-close">x</span>
+      <button class="modal-close">Закрыть</button>
     </form>			
 	</section>
 </body>
