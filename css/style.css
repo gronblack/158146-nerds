@@ -66,6 +66,10 @@ ul {
 	font-weight: 500;
 }
 
+.main-header-logo {
+	margin-top: 49px;
+}
+
 .main-header-logo:hover {
 	opacity: 0.8;
 }
@@ -87,9 +91,27 @@ ul {
 	opacity: 0.3;
 }
 
+.site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.site-navigation a {
+	display: block;
+
+	margin-top: 73px;
+	margin-right: 47px;
+}
+
 .site-navigation-current a {
-	padding-bottom: 12px;
+	padding-bottom: 5px;
 	border-bottom: 2px solid #fb565a;
+}
+
+.cart {
+	display: block;
+
+	margin-top: 73px;
 }
 
 .page-title {
@@ -291,6 +313,11 @@ ul {
 	line-height: 10.06px;
 	color: #000000;
 	font-weight: 700;	
+}
+
+.promo-links ul {
+	display: flex;
+	justify-content: space-around; /*временно*/
 }
 
 .promo-links li {
