@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header class="main-header">
-		<nav class="main-navigation">
+		<nav class="main-navigation container">
     	<a class="main-header-logo">
       	<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии «Nerds»">
       </a>
@@ -29,18 +29,18 @@
 			<h2 class="visually-hidden">Достоинства</h2>
 		  <div class="slider">
 		      <div class="slide">
-		      	<h3 class="page-title">Долго, дорого, скрупулезно</h3>
-		      	<p>Математически выверенный дизайн для вашего сайта или приложения.</p>
+		      	<h3 class="page-title">Долго, дорого,<br>скрупулезно</h3>
+		      	<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
 		      	<a class="button slide-button" href="#">Узнать больше</a>
 		      </div>
-		      <div class="slide">
-		      	<h3 class="page-title">Любим математику как никто другой</h3>
-		      	<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-		      	<a class="button slide-button" href="#">Узнать больше</a>		      	
+		      <div class="slide visually-hidden"> <!-- visually-hidden временно -->
+		      	<h3 class="page-title">Любим математику<br>как никто другой</h3>
+		      	<p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+		      	<a class="button slide-button" href="#">Узнать больше</a>		      
 		      </div>
-		      <div class="slide">
-		      	<h3 class="page-title">Только ночь, только хардкор</h3>
-		      	<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+		      <div class="slide visually-hidden"> <!-- visually-hidden временно -->
+		      	<h3 class="page-title">Только ночь,<br>только хардкор</h3>
+		      	<p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
 		      	<a class="button slide-button" href="#">Узнать больше</a>		      	     	
 		      </div>
 		 </div>
@@ -69,35 +69,37 @@
 			</ul>
 		</section>
 		<section class="promo">
-			<section class="promo-left">
-				<h2 class="visually-hidden">О студии</h2>
-				<p class="promo-big">Мы - маленькая, но гордая дизайн-студия из Краснодара.<p>
-				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-				<h3>Выполняем заказы на разработку:</h3>
-				<ul>
-					<li>Веб-сайтов любой сложности</li>
-					<li>Мобильных приложений для iOS и Android</li>
-					<li>Слайд-шоу и видео для корпоративных презентаций</li>
-				</ul>				
-			</section>
-			<section class="promo-right">
-				<img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип веб-студии «Nerds»">
-				<h3>С 2004 года любим точность во всем:</h3>
-				<ul>
-					<li>
-						<span class="promo-bold">146%</span>
-						<p>Уровень самоотдачи</p>
-					</li>
-					<li>
-						<span class="promo-bold">100%</span>
-						<p>Соблюдение сроков</p>
-					</li>
-					<li>
-						<span class="promo-bold">50%</span>
-						<p>Минимальная предоплата</p>
-					</li>					
-				</ul>
-			</section>
+			<div class="promo-columns">
+				<section class="promo-left">
+					<h2 class="visually-hidden">О студии</h2>
+					<p class="promo-big">Мы - маленькая, но гордая дизайн-студия из Краснодара.<p>
+					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+					<h3>Выполняем заказы на разработку:</h3>
+					<ul>
+						<li>Веб-сайтов любой сложности</li>
+						<li>Мобильных приложений для iOS и Android</li>
+						<li>Слайд-шоу и видео для корпоративных презентаций</li>
+					</ul>				
+				</section>
+				<section class="promo-right">
+					<img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип веб-студии «Nerds»">
+					<h3>С 2004 года любим точность во всем:</h3>
+					<ul>
+						<li>
+							<span class="promo-bold">146%</span>
+							<p>Уровень самоотдачи</p>
+						</li>
+						<li>
+							<span class="promo-bold">100%</span>
+							<p>Соблюдение сроков</p>
+						</li>
+						<li>
+							<span class="promo-bold">50%</span>
+							<p>Минимальная предоплата</p>
+						</li>					
+					</ul>
+				</section>
+			</div>	
 			<section class="promo-links">
 				<h2 class="visually-hidden">Наши работы</h2>
 				<ul>
@@ -112,31 +114,35 @@
 	<footer class="main-footer">
 		<section class="footer-map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
-			<p>
+			<p class="visually-hidden">
 				<img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
 			</p>
-			<div class="footer-contacts">
-				<h3>Nёrds design studio</h3>
-				<p>
-					191186, Санкт-Петербург,<br>
-					ул. Б.Конюшенная, д. 19/8
-				</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a class="button button-write" href="#">Напишите нам</a>
+			<div class="container">
+				<div class="footer-contacts">
+					<h3>Nёrds design studio</h3>
+					<p>
+						191186, Санкт-Петербург,<br>
+						ул. Б.Конюшенная, д. 19/8
+					</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a class="button button-write" href="#">Напишите нам</a>
+				</div>
 			</div>
 		</section>
-		<section class="footer-social">
+		<section class="footer-social container">
 	    <ul>
 	      <li><a class="social-button" href="#">Вконтакте</a></li>
 	      <li><a class="social-button" href="#">Фейсбук</a></li>
 	      <li><a class="social-button" href="#">Инстаграм</a></li>
 	    </ul>
-	    <b>Давайте дружить, это выгодно!</b>
-	    <p>Скидка 10% для друзей из социальных сетей.</p>
+	    <div>
+		    <b>Давайте дружить, это выгодно!</b>
+		    <p>Скидка 10% для друзей из социальных сетей.</p>
+	    </div>
 		</section>
 	</footer>
 
-	<section class="modal modal-write">
+	<section class="modal modal-write visually-hidden"> <!-- visually-hidden временно -->
 		<h2>Напишите нам</h2>
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="write-item">
@@ -154,6 +160,6 @@
       <button class="button" type="submit">Отправить</button>
       <button class="modal-close">Закрыть</button>
     </form>			
-	</section>	
+	</section>
 </body>
 </html>

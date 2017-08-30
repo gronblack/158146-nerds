@@ -7,9 +7,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<title>Каталог веб-студии Nerds</title>
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
-		<nav class="main-navigation">
+		<nav class="main-navigation container">
     	<a class="main-header-logo" href="index.html">
       	<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии «Nerds»">
       </a>
@@ -21,225 +21,238 @@
       </ul>
       <a class="basket" href="#">Корзина</a>
 		</nav>
+		<h1 class="page-title">Магазин готовых шаблонов</h1>
 	</header>
 	<main class="container">
-		<h1 class="page-title">Магазин готовых шаблонов</h1>
-		<section class="filters">
-			<h2 class="visually-hidden">Фильтр товаров</h2>
-			
-			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-				<fieldset>
-					<legend>Стоимость:</legend>
-					<input type="range" min="0" max="20000" step="100" value="15000">
-					<p>
-						<label for="filter-price-min">От</label>
-						<input id="filter-price-min" class="filter-price" type="text" name="price-min">
-						<label for="filter-price-max">До</label>
-						<input id="filter-price-max" class="filter-price" type="text" name="price-max">
-	         </p>					
-				</fieldset>
-				<fieldset>
-					<legend>Сетка:</legend>
-					<ul>
-						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-radio" id="filter-adaptive" type="radio" name="greed" value="adaptive" checked>
-							<label for="filter-adaptive">Адаптивная</label>
-						</li>
-						<li class="filter-option">						
-							<input class="visually-hidden filter-input filter-input-radio" id="filter-fixed" type="radio" name="greed" value="fixed">
-							<label for="filter-fixed">Фиксированная</label>													
-						</li>
-						<li class="filter-option">						
-							<input class="visually-hidden filter-input filter-input-radio" id="filter-rubber" type="radio" name="greed" value="rubber">
-							<label for="filter-rubber">Резиновая</label>
-						</li>						
-					</ul>
-				</fieldset>
-				<fieldset>
-					<legend>Особенности:</legend>
-					<ul>
-						<li class="filter-option">
-	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" type="checkbox" name="slider" checked>
-	            <label for="filter-slider">Слайдер</label>							
-						</li>
-						<li class="filter-option">
-	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-features" type="checkbox" name="features">
-	            <label for="filter-features">Блок преимуществ</label>							
-						</li>
-						<li class="filter-option">
-	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-news" type="checkbox" name="news" checked>
-	            <label for="filter-news">Новости</label>							
-						</li>
-						<li class="filter-option">
-	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery" type="checkbox" name="gallery">
-	            <label for="filter-gallery">Галерея</label>							
-						</li>						
-						<li class="filter-option">
-	            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-basket" type="checkbox" name="basket">
-	            <label for="filter-basket">Корзина</label>							
-						</li>						
-					</ul>
-				</fieldset>
-				<button type="submit" class="filter-button button">Показать</button>
-			</form>	
-		</section>
-		<section class="sorting">
-			<fieldset>
-				<legend>Сортировать:</legend>
-				<ul>
-					<li class="sorting-option option-current">
-						<input class="visually-hidden sorting-radio" id="sorting-by-price" type="radio" name="sort-group" value="by-price" checked>
-						<label for="sorting-by-price">По цене</label>						
-					</li>
-					<li class="sorting-option">
-						<input class="visually-hidden sorting-radio" id="sorting-by-type" type="radio" name="sort-group" value="by-type">
-						<label for="sorting-by-type">По типу</label>						
-					</li>					
-					<li class="sorting-option">
-						<input class="visually-hidden sorting-radio" id="sorting-by-name" type="radio" name="sort-group" value="by-name">
-						<label for="sorting-by-name">По названию</label>
-					</li>					
-				</ul>
-				<ul>
-					<li class="sorting-option option-current">
-						<input class="visually-hidden sorting-radio" type="radio" name="sort-way" value="desc" id="sort-desc" checked>
-						<label class="visually-hidden" for="sort-desc">По убыванию</label>
-					</li>
-					<li class="sorting-option">
-						<input class="visually-hidden sorting-radio" type="radio" name="sort-way" value="asc" id="sort-asc">
-						<label class="visually-hidden" for="sort-asc">По возрастанию</label>
-					</li>
-				</ul>
-			</fieldset>
-		</section>
-		<section class="catalog">
-			<h2 class="visually-hidden">Список шаблонов сайтов</h2>
+		<div class="catalog-columns">
+			<section class="filters">
+				<h2 class="visually-hidden">Фильтр товаров</h2>
+				
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+					<fieldset>
+						<legend>Стоимость:</legend>
+						<input type="range" min="0" max="20000" step="100" value="15000">
+						<p>
+							<label for="filter-price-min">От</label>
+							<input id="filter-price-min" class="filter-price" type="text" name="price-min">
+							<label for="filter-price-max">До</label>
+							<input id="filter-price-max" class="filter-price" type="text" name="price-max">
+		         </p>					
+					</fieldset>
+					<fieldset>
+						<legend>Сетка:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" id="filter-adaptive" type="radio" name="greed" value="adaptive" checked>
+								<label for="filter-adaptive">Адаптивная</label>
+							</li>
+							<li class="filter-option">						
+								<input class="visually-hidden filter-input filter-input-radio" id="filter-fixed" type="radio" name="greed" value="fixed">
+								<label for="filter-fixed">Фиксированная</label>													
+							</li>
+							<li class="filter-option">						
+								<input class="visually-hidden filter-input filter-input-radio" id="filter-rubber" type="radio" name="greed" value="rubber">
+								<label for="filter-rubber">Резиновая</label>
+							</li>						
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<ul>
+							<li class="filter-option">
+		            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" type="checkbox" name="slider" checked>
+		            <label for="filter-slider">Слайдер</label>							
+							</li>
+							<li class="filter-option">
+		            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-features" type="checkbox" name="features">
+		            <label for="filter-features">Блок преимуществ</label>							
+							</li>
+							<li class="filter-option">
+		            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-news" type="checkbox" name="news" checked>
+		            <label for="filter-news">Новости</label>							
+							</li>
+							<li class="filter-option">
+		            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery" type="checkbox" name="gallery">
+		            <label for="filter-gallery">Галерея</label>							
+							</li>						
+							<li class="filter-option">
+		            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-basket" type="checkbox" name="basket">
+		            <label for="filter-basket">Корзина</label>							
+							</li>						
+						</ul>
+					</fieldset>
+					<button type="submit" class="filter-button button">Показать</button>
+				</form>	
+			</section>
+			<section class="catalog">
+				<div class="sorting">
+					<fieldset>
+						<legend>Сортировать:</legend>
+						<ul>
+							<li class="sorting-option option-current">
+								<input class="visually-hidden sorting-radio" id="sorting-by-price" type="radio" name="sort-group" value="by-price" checked>
+								<label for="sorting-by-price">По цене</label>						
+							</li>
+							<li class="sorting-option">
+								<input class="visually-hidden sorting-radio" id="sorting-by-type" type="radio" name="sort-group" value="by-type">
+								<label for="sorting-by-type">По типу</label>						
+							</li>					
+							<li class="sorting-option">
+								<input class="visually-hidden sorting-radio" id="sorting-by-name" type="radio" name="sort-group" value="by-name">
+								<label for="sorting-by-name">По названию</label>
+							</li>					
+						</ul>
+						<ul>
+							<li class="sorting-option option-current">
+								<input class="visually-hidden sorting-radio" type="radio" name="sort-way" value="desc" id="sort-desc" checked>
+								<label class="visually-hidden" for="sort-desc">По убыванию</label>
+							</li>
+							<li class="sorting-option">
+								<input class="visually-hidden sorting-radio" type="radio" name="sort-way" value="asc" id="sort-asc">
+								<label class="visually-hidden" for="sort-asc">По возрастанию</label>
+							</li>
+						</ul>
+				</div>
 
-      <p class="catalog-item">
-        <a href="catalog-item.html">
-          <img src="img/product-1.jpg" width="360" height="576" alt="Шаблон «Sedona»">
-        </a>
-        <div class="catalog-item-hover">
-        	<div><!--Шапка вверху--></div>
-					<div>
-						<h3>Sedona</h3>
-						<p>Информационный сайт для туристов</p>
-						<a class="button button-buy" href="#">9900 руб.</a>
-					</div>	          
-				</div>	          
-      </p>
+				<h2 class="visually-hidden">Список шаблонов сайтов</h2>
 
-      <p class="catalog-item">
-        <a href="catalog-item.html">
-          <img src="img/product-2.jpg" width="360" height="576" alt="Шаблон «Pink»">
-        </a>
-				<div class="catalog-item-hover">
-        	<div><!--Шапка вверху--></div>
-        	<div>				
-						<h3>Pink App</h3>
-						<p>Продуктовый лендинг приложения для iOS и Android</p>
-						<a class="button button-buy" href="#">9900 руб.</a>
-					</div>
-				</div>        
-      </p>
+				<ul class="catalog-list">
+		      <li class="catalog-item">
+		      	<div><!--Шапка вверху--></div>
+		        <a href="catalog-item.html">
+		          <img src="img/product-1.jpg" width="360" height="576" alt="Шаблон «Sedona»">
+		        </a>
+		        <div class="catalog-item-hover">
+		        	<div><!--Шапка вверху--></div>
+							<div>
+								<h3>Sedona</h3>
+								<p>Информационный сайт для туристов</p>
+								<a class="button button-buy" href="#">9900 руб.</a>
+							</div>	          
+						</div>	          
+		      </li>
 
-      <p class="catalog-item">
-        <a href="catalog-item.html">
-          <img src="img/product-3.jpg" width="360" height="576" alt="Шаблон «Barbershop»">
-        </a>
-				<div class="catalog-item-hover">
-        	<div><!--Шапка вверху--></div>
-        	<div>				
-						<h3>Barbershop</h3>
-						<p>Сайт салона красоты. Для мужчин, да.</p>
-						<a class="button button-buy" href="#">9900 руб.</a>
-					</div>
-				</div>        
-      </p>
+		      <li class="catalog-item">
+		      	<div><!--Шапка вверху--></div>
+		        <a href="catalog-item.html">
+		          <img src="img/product-2.jpg" width="360" height="576" alt="Шаблон «Pink»">
+		        </a>
+						<div class="catalog-item-hover">
+		        	<div><!-- Шапка вверху--></div>
+		        	<div>				
+								<h3>Pink App</h3>
+								<p>Продуктовый лендинг приложения для iOS и Android</p>
+								<a class="button button-buy" href="#">9900 руб.</a>
+							</div>
+						</div>        
+		      </li>
 
-      <p class="catalog-item">
-        <a href="catalog-item.html">
-          <img src="img/product-4.jpg" width="360" height="576" alt="Шаблон «Mishka»">
-        </a>
-				<div class="catalog-item-hover">
-        	<div><!--Шапка вверху--></div>
-        	<div>				
-						<h3>Mishka</h3>
-						<p>Интернет-магазин вязаных игрушек</p>
-						<a class="button button-buy" href="#">9900 руб.</a>
-					</div>	        	
-				</div>	        
-      </p>
+		      <li class="catalog-item">
+		      	<div><!--Шапка вверху--></div>
+		        <a href="catalog-item.html">
+		          <img src="img/product-3.jpg" width="360" height="576" alt="Шаблон «Barbershop»">
+		        </a>
+						<div class="catalog-item-hover">
+		        	<div><!--Шапка вверху--></div>
+		        	<div>				
+								<h3>Barbershop</h3>
+								<p>Сайт салона красоты. Для мужчин, да.</p>
+								<a class="button button-buy" href="#">9900 руб.</a>
+							</div>
+						</div>        
+		      </li>
 
-      <p class="catalog-item">
-        <a href="catalog-item.html">
-          <img src="img/product-5.jpg" width="360" height="576" alt="Шаблон «A Plus»">
-        </a>
-				<div class="catalog-item-hover">
-        	<div><!--Шапка вверху--></div>
-        	<div>				
-						<h3>A Plus</h3>
-						<p>Лендинг курсов повышения квалификации</p>
-						<a class="button button-buy" href="#">9900 руб.</a>
-					</div>	
-				</div>        
-      </p>
+		      <li class="catalog-item">
+		      	<div><!--Шапка вверху--></div>
+		        <a href="catalog-item.html">
+		          <img src="img/product-4.jpg" width="360" height="576" alt="Шаблон «Mishka»">
+		        </a>
+						<div class="catalog-item-hover">
+		        	<div><!--Шапка вверху--></div>
+		        	<div>				
+								<h3>Mishka</h3>
+								<p>Интернет-магазин вязаных игрушек</p>
+								<a class="button button-buy" href="#">9900 руб.</a>
+							</div>	        	
+						</div>	        
+		      </li>
 
-      <p class="catalog-item">
-        <a href="catalog-item.html">
-          <img src="img/product-6.jpg" width="360" height="576" alt="Шаблон «Кваст»">
-        </a>
-				</div>	
-				<div class="catalog-item-hover">
-				 	<div><!--Шапка вверху--></div>
-        	<div>
-						<h3>Кваст</h3>
-						<p>Промо-сайт производителя крафтового кваса</p>
-						<a class="button button-buy" href="#">9900 руб.</a>
-					</div>	
-				</div>        
-      </p>
+		      <li class="catalog-item">
+		      	<div><!--Шапка вверху--></div>
+		        <a href="catalog-item.html">
+		          <img src="img/product-5.jpg" width="360" height="576" alt="Шаблон «A Plus»">
+		        </a>
+						<div class="catalog-item-hover">
+		        	<div><!--Шапка вверху--></div>
+		        	<div>				
+								<h3>A Plus</h3>
+								<p>Лендинг курсов повышения квалификации</p>
+								<a class="button button-buy" href="#">9900 руб.</a>
+							</div>	
+						</div>        
+		      </li>
 
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
-      </ul>			
-		</section>
+		      <li class="catalog-item">
+		      	<div><!--Шапка вверху--></div>
+		        <a href="catalog-item.html">
+		          <img src="img/product-6.jpg" width="360" height="576" alt="Шаблон «Кваст»">
+		        </a>
+						<div class="catalog-item-hover">
+						 	<div><!--Шапка вверху--></div>
+		        	<div>
+								<h3>Кваст</h3>
+								<p>Промо-сайт производителя крафтового кваса</p>
+								<a class="button button-buy" href="#">9900 руб.</a>
+							</div>	
+						</div>        
+		      </li>
+		    </ul>
+
+	      <ul class="pagination-list">
+	        <li class="pagination-item pagination-item-current"><a>1</a></li>
+	        <li class="pagination-item"><a href="#">2</a></li>
+	        <li class="pagination-item"><a href="#">3</a></li>
+	        <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+	      </ul>			
+			</section>
+		</div>	
 	</main>
 	<footer class="main-footer">
 		<section class="footer-map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
-			<p>
+			<p class="visually-hidden">
 				<img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
 			</p>
-			<div class="footer-contacts">
-				<h3>Nёrds design studio</h3>
-				<p>
-					191186, Санкт-Петербург,<br>
-					ул. Б.Конюшенная, д. 19/8
-				</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a class="button button-write" href="#">Напишите нам</a>
+			<div class="container">
+				<div class="footer-contacts">
+					<h3>Nёrds design studio</h3>
+					<p>
+						191186, Санкт-Петербург,<br>
+						ул. Б.Конюшенная, д. 19/8
+					</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a class="button button-write" href="#">Напишите нам</a>
+				</div>
 			</div>
 		</section>
-		<section class="footer-social">
+		<section class="footer-social container">
 	    <ul>
 	      <li><a class="social-button" href="#">Вконтакте</a></li>
 	      <li><a class="social-button" href="#">Фейсбук</a></li>
 	      <li><a class="social-button" href="#">Инстаграм</a></li>
 	    </ul>
-	    <b>Давайте дружить, это выгодно!</b>
-	    <p>Скидка 10% для друзей из социальных сетей.</p>
+	    <div>
+		    <b>Давайте дружить, это выгодно!</b>
+		    <p>Скидка 10% для друзей из социальных сетей.</p>
+	    </div>
 		</section>
 	</footer>
 
-	<section class="modal modal-write">
+	<section class="modal modal-write visually-hidden"> <!-- visually-hidden временно -->
 		<h2>Напишите нам</h2>
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="write-item">
-      	<label for="write-item-name">Ваше имя:</label>	
+      	<label for="write-item-name">Ваше имя:</label>
       	<input id="write-item-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
       </p>
       <p class="write-item">
