@@ -77,9 +77,9 @@
 			</ul>
 		</section>
 		<section class="promo container">
+			<h2 class="visually-hidden">О студии</h2>
 			<div class="promo-columns">
 				<section class="promo-left">
-					<h2 class="visually-hidden">О студии</h2>
 					<p class="promo-big">Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.</p>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<h3>Выполняем заказы на разработку:</h3>
@@ -112,7 +112,7 @@
 				<h2 class="visually-hidden">Наши работы</h2>
 				<ul>
 					<li>
-						<a class="htmlacademy" href="#">
+						<a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
 							<span class="visually-hidden">HTML-Academy</span>
 							</a>
 					</li>
@@ -154,6 +154,7 @@
 			</div>
 		</section>
 		<section class="footer-social container">
+			<h2 class="visually-hidden">Мы в социальных сетях</h2>
 	    <ul>
 	      <li>
 	      	<a class="social-button" href="#">
@@ -181,20 +182,22 @@
 		</section>
 	</footer>
 
-	<section class="modal modal-write visually-hidden"> <!-- visually-hidden временно -->
+	<section class="modal-write">
 		<h2>Напишите нам</h2>
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="write-item">
-      	<label for="write-item-name">Ваше имя:</label>
-      	<input id="write-item-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-      </p>
-      <p class="write-item">
-      	<label for="write-item-email">Ваш e-mail:</label>
-      	<input id="write-item-email" type="text" name="email" value="" placeholder="Для отправки ответа">
-      </p>
-      <p class="write-item">
+    	<div class="write-items">
+	      <p>
+	      	<label for="write-item-name">Ваше имя:</label>
+	      	<input id="write-item-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+	      </p>
+	      <p>
+	      	<label for="write-item-email">Ваш e-mail:</label>
+	      	<input id="write-item-email" type="text" name="email" value="" placeholder="Для отправки ответа">
+	      </p>
+      </div>
+      <p>
       	<label for="write-item-text">Текст письма:</label>
-      	<textarea id="write-item-text" type="text" name="text" value="" placeholder="В свободной форме"></textarea>
+      	<textarea id="write-item-text" name="text" placeholder="В свободной форме"></textarea>
       </p>         
       <button class="button" type="submit">Отправить</button>
       <button class="modal-close">Закрыть</button>

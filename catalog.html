@@ -15,10 +15,10 @@
       	<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии «Nerds»">
       </a>
       <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="customers.html">Клиенты</a></li>
-        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li class="site-navigation-current"><a>Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
       <a class="cart" href="#">Корзина</a>
 		</nav>
@@ -139,7 +139,7 @@
 		        </a>
 		        <div class="catalog-item-hover">
 							<div>
-								<h3>Sedona</h3>
+								<a href="catalog-item.html"><h3>Sedona</h3></a>
 								<p>Информационный сайт<br>для туристов</p>
 								<a class="button button-buy" href="#">9900 руб.</a>
 							</div>	          
@@ -152,7 +152,7 @@
 		        </a>
 						<div class="catalog-item-hover">
 		        	<div>				
-								<h3>Pink App</h3>
+								<a href="catalog-item.html"><h3>Pink App</h3></a>
 								<p>Продуктовый лендинг<br>приложения для iOS и Android</p>
 								<a class="button button-buy" href="#">9900 руб.</a>
 							</div>
@@ -165,7 +165,7 @@
 		        </a>
 						<div class="catalog-item-hover">
 		        	<div>				
-								<h3>Barbershop</h3>
+								<a href="catalog-item.html"><h3>Barbershop</h3></a>
 								<p>Сайт салона красоты.<br>Для мужчин, да.</p>
 								<a class="button button-buy" href="#">9900 руб.</a>
 							</div>
@@ -178,7 +178,7 @@
 		        </a>
 						<div class="catalog-item-hover">
 		        	<div>				
-								<h3>Mishka</h3>
+								<a href="catalog-item.html"><h3>Mishka</h3></a>
 								<p>Интернет-магазин<br>вязаных игрушек</p>
 								<a class="button button-buy" href="#">9900 руб.</a>
 							</div>	        	
@@ -191,7 +191,7 @@
 		        </a>
 						<div class="catalog-item-hover">
 		        	<div>				
-								<h3>A Plus</h3>
+								<a href="catalog-item.html"><h3>A Plus</h3></a>
 								<p>Лендинг курсов повышения квалификации</p>
 								<a class="button button-buy" href="#">9900 руб.</a>
 							</div>	
@@ -204,12 +204,12 @@
 		        </a>
 						<div class="catalog-item-hover">
 		        	<div>
-								<h3>Кваст</h3>
+								<a href="catalog-item.html"><h3>Кваст</h3></a>
 								<p>Промо-сайт производителя крафтового кваса</p>
 								<a class="button button-buy" href="#">9900 руб.</a>
 							</div>	
 						</div>        
-		      </li>
+		      </li>		      
 		    </ul>
 
 	      <ul class="pagination-list">
@@ -240,6 +240,7 @@
 			</div>
 		</section>
 		<section class="footer-social container">
+			<h2 class="visually-hidden">Мы в социальных сетях</h2>
 	    <ul>
 	      <li>
 	      	<a class="social-button" href="#">
@@ -267,20 +268,22 @@
 		</section>
 	</footer>
 
-	<section class="modal modal-write visually-hidden"> <!-- visually-hidden временно -->
+	<section class="modal-write">
 		<h2>Напишите нам</h2>
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="write-item">
-      	<label for="write-item-name">Ваше имя:</label>
-      	<input id="write-item-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-      </p>
-      <p class="write-item">
-      	<label for="write-item-email">Ваш e-mail:</label>
-      	<input id="write-item-email" type="text" name="email" value="" placeholder="Для отправки ответа">
-      </p>
-      <p class="write-item">
+    	<div class="write-items">
+	      <p>
+	      	<label for="write-item-name">Ваше имя:</label>
+	      	<input id="write-item-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+	      </p>
+	      <p>
+	      	<label for="write-item-email">Ваш e-mail:</label>
+	      	<input id="write-item-email" type="text" name="email" value="" placeholder="Для отправки ответа">
+	      </p>
+      </div>
+      <p>
       	<label for="write-item-text">Текст письма:</label>
-      	<textarea id="write-item-text" type="text" name="text" value="" placeholder="В свободной форме"></textarea>
+      	<textarea id="write-item-text" name="text" placeholder="В свободной форме"></textarea>
       </p>         
       <button class="button" type="submit">Отправить</button>
       <button class="modal-close">Закрыть</button>
