@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="format-detection" content="telephone=no">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style-min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<title>Веб-студия «Nёrds»</title>
 </head>
@@ -18,7 +18,7 @@
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>     
+        <li><a href="#">Контакты</a></li>            
       </ul>
       <a class="cart" href="#">Корзина</a>
 		</nav>
@@ -40,7 +40,8 @@
 		  		<div class="slides">
 			      <div class="slide">
 			      	<h3 class="page-title">Долго, дорого,<br>скрупулезно.</h3>
-			      	<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+			      	<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
+			      	</p>
 			      	<a class="button slide-button" href="#">Узнать больше</a>
 			      </div>
 			      <div class="slide">
@@ -138,6 +139,7 @@
 	<footer class="main-footer">
 		<section class="footer-map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616366473!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1504957026951"></iframe>
 			<p class="visually-hidden">
 				<img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 			</p>
@@ -188,7 +190,7 @@
     	<div class="write-items">
 	      <p>
 	      	<label for="write-item-name">Ваше имя:</label>
-	      	<input id="write-item-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+	      	<input id="write-item-name" type="text" name="login" value="" placeholder="Представьтесь, пожалуйста">
 	      </p>
 	      <p>
 	      	<label for="write-item-email">Ваш e-mail:</label>
@@ -203,5 +205,7 @@
       <button class="modal-close">Закрыть</button>
     </form>			
 	</section>
+
+	<script src="js/write-us-min.js"></script>
 </body>
 </html>
